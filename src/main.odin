@@ -398,6 +398,8 @@ main :: proc() {
 		rl.BeginDrawing()
 		draw_game()
 		rl.EndDrawing()
+
+		free_all(context.temp_allocator)
 	}
 
 	rl.CloseWindow()
